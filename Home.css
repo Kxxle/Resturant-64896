@@ -1,0 +1,100 @@
+#header{
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    z-index: 997;
+    padding: 15px 15px;
+    top: 40px;
+    margin-top: -20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 6px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    border-width:0 0 2px 0 ;
+    border-color: #d9ba85;
+    border-style: solid;
+  }
+  
+  .active {
+    background-color: #d9ba85;
+  }
+.nav-item {
+    
+    color:white;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    
+   
+}
+
+.nav-home {
+    margin:0px;
+    color: white;
+    border-width:2px solid white;
+    padding-bottom: 10px;
+
+}
+.nav-menu {
+    margin:10px;
+    color:white;
+    padding-bottom: 10px;
+    
+}
+.nav-contact {
+    margin: 10px;
+    color:white;
+    
+}
+body {
+    padding:20px;
+    background-image: url(Wine_room_2.jpg);
+
+    
+}
+.resturant-name{
+    font-size: 20px;
+    list-style-type: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-weight: 100%;
+}
+.slogan{
+    font-size: 10px;
+}
+.end{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.box1, .box2, .box3{
+    margin: auto;
+}
+footer{
+    font-size: 14px;
+    color: white;
+    background-color: rgba(12, 11, 9);
+}

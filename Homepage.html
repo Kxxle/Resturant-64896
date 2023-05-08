@@ -12,7 +12,7 @@
        <nav  class="navbar">
         
         <ul>
-            <li class="nav-item"> <a class="nav-home active" href="Homepage.html"><p class="resturant-name">Resturant N More</p><p class="slogan">Taste.Feel.Enjoy</p></a></li>
+            <li class="nav-item"> <a class="nav-home" href="Homepage.html"><p class="resturant-name">Resturant N More</p><p class="slogan">Taste.Feel.Enjoy</p></a></li>
            <li style="float:right;" class="nav-item"><a class="nav-menu" href="Menupage.html">Menu</a></li>
            <li style="float: right;"class="nav-item"><a class="nav-contact" href="Contactpage.html">Contact</a></li>
         </ul> <!-- Font links-->
@@ -25,26 +25,110 @@
 </head>    
 <body>
     <main>
-    <div class="header">
+    <div>
         
             <section>
+                <div class="slideshow-container">
 
+                    <div class="Slides fade">
+                      <div class="numbertext">1 / 7</div>
+                      <img src="gallery-1.jpg" style="width:100%">
+                      
+                    </div>
+                    
+                    <div class="Slides fade">
+                      <div class="numbertext">2 / 7</div>
+                      <img src="gallery-2.jpg" style="width:100%">
+                      
+                    </div>
+                    
+                    <div class="Slides fade">
+                      <div class="numbertext">3 / 8</div>
+                      <img src="gallery-3.jpg" style="width:100%">
+                      
+                    </div>
+                    <div class="Slides fade">
+                        <div class="numbertext">4 / 7</div>
+                        <img src="gallery-4.jpg" style="width:100%">
+                        
+                      </div>
+                      <div class="Slides fade">
+                        <div class="numbertext">5 / 7</div>
+                        <img src="gallery-5.jpg" style="width:100%">
+                        
+                      </div>
+                      <div class="Slides fade">
+                        <div class="numbertext">6 / 7</div>
+                        <img src="gallery-6.jpg" style="width:100%">
+                        
+                      </div>
+                      <div class="Slides fade">
+                        <div class="numbertext">7 / 7</div>
+                        <img src="gallery-7.jpg" style="width:100%">
+                        
+                      </div>
+
+                    </div>
+                    <br>
+
+                    <!--Dots-->
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+                    <!--JavaScript-->
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                        let i;
+                        let slides = document.getElementsByClassName("Slides");
+                        let dots = document.getElementsByClassName("dot");
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                        setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
             </section>
+            <div clas="section2">
+                <iframe style="border:0; width: 100%; height: 350px;" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Marszałkowska 138, 00-004 Warszawa&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" allowfullscreen=""></iframe>
+            </div>
             <section>
                 <div class="end">
                     <div class="box1">
-                        <p>Social Medias</p>
-                        <a src="Homepage.html"><img class="icon" src="" alt="Twitter"></a>
-                        <a src="Homepage.html"><img class="icon" src="" alt="Facebook"></a>
-                        <a src="Homepage.html"><img class="icon" src="" alt="Instagram"></a>
-                        <a src="Homepage.html"><img class="icon" src="" alt="LinkedIn"></a>
+                        <p style="font-size: 30px;">Social Medias</p>
+                        <strong>Address:</strong><p>Marszałkowska 138, 00-004 Warszawa</p>
+                        <strong>Email:</strong><p>Resturantn.More@gmail.com</p><br>
+                        
+                        <a href="Homepage.html"><img class="icon" src="twitter.png" alt="Twitter"></a>
+                        <a href="Homepage.html"><img class="icon" src="facebook.png" alt="Facebook"></a>
+                        <a href="Homepage.html"><img class="icon" src="instagram.png" alt="Instagram"></a>
+                        <a href="Homepage.html"><img class="icon" src="linkedin.png" alt="LinkedIn"></a>
                     </div>
                     <div class="box2">
+                        <p style="font-size: 30px;">Useful Links</p>
+                        <a href="Home.css">Home</a>
+                        <a href="Home.css">About Us</a>
+                        <a href="Home.css">Services</a>
+                        <a href="Home.css">Terms of Services</a>
+                        <a href="Home.css">Privacy Policy</a>
                         
                     </div>
-                    <div class="box3">
-                        
-                    </div>
+                    
                 </div>
             </section>
     </div>
@@ -53,6 +137,11 @@
 </main>
 </body>
 <footer>
-
+    <div class="footer">
+    <a href="https://www.flaticon.com/free-icons/twitter" title="twitter icons">Twitter icons created by Bogdan Rosu - Flaticon</a><br>
+    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Md Tanvirul Haque - Flaticon</a><br>
+    <a href="https://www.flaticon.com/free-icons/instagram-logo" title="instagram logo icons">Instagram logo icons created by Hight Quality Icons - Flaticon</a><br>
+    <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Bogdan Rosu - Flaticon</a>
+</div>
 </footer>
 </html>
